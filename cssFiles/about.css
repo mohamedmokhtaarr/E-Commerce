@@ -1,0 +1,11 @@
+.container{
+    background:#6c7d63;
+    min-height: 13vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.content .text{
+    width: 40%;
+    color: #0a0101;
+}

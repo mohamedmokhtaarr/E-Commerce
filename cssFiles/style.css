@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background: black;
+  }
+  .heading ul {
+    display: flex;
+  }
+  .logo a {
+    color: rgb(241, 233, 11);
+    transition-duration: 1s;
+    font-weight: 800;
+  }
+  .logo a:hover {
+    color: rgb(241, 233, 11);
+    transition-duration: 1s;
+  }
+  .heading ul li {
+    list-style: none;
+  }
+  .heading ul li a {
+    margin: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    color:#fff;
+    margin: 2px 14px;
+    font-size: 18px;
+    transition-duration: 1s;
+  }
+  .heading ul li a:active {
+    color: red;
+  }
+  .heading ul li a:hover {
+    color: rgb(241, 233, 11);
+    transition-duration: 1s;
+  }
+  
+  .heading ul li a::before {
+    content: "";
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:rgb(241, 233, 11) ;
+    transition-duration: 1s;
+  }
+  .heading ul li a:hover::before {
+    width: 100%;
+    transition-duration: 1s;
+    background-color: rgb(241, 233, 11);
+  }
+  .logo {
+    width: 150px;
+
+}
+  .logo a {
+    color:#fff;
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text{
+   width: 40%;
+   color: #070707;
+}
+.content .text h2{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.content .text p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.content .image img{
+    width:  400px ;
+    }
+
+    .icons{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50% );
+    }
+    .icons img {
+        width: 50px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .icons img:hover{ 
+        transform:scale(1.2)
+    }
+    .main-image-slider {
+
+        margin: auto;
+    
+    
+    }
+    
+    
+    .image-slider {
+        top: 0px;
+        min-height: 20em;
+        height: 90vh;
+        width: 65%;
+        margin-left: 280px;
+        position: relative;
+        background-image: url("./img/");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* transition: 3s; */
+    }
+    
+    .image-slider img {
+        border-radius: 9px;
+    }
+    
+    .image-slider * {
+        box-sizing: border-box;
+    }
+    
+ 
+    .arrow-left,
+    .arrow-right {
+        background: #fff;
+        position: absolute;
+        top: 46%;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+        background-color: rgb(228, 123, 11);
+
+    }
+    
+    .arrow-left:hover,
+    .arrow-right:hover {
+   
+        background: #0b0b0b;
+        color: #fff;
+    }
+    
+    .arrow-left {
+        left: 65em;
+    }
+  
+    .arrow-right {
+        right: 65em;
+    }
+
+    .feature {
+
+        padding: 40px 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .feature .Chevrolet {
+        width: 50%;
+        text-align: center;
+        padding: 25px 15px;
+        box-shadow: 10px 20px 34px rgba(0, 0, 0, .03);
+        border: 1px solid #cce7d0;
+        border-radius: 4px;
+        margin: 15px 0px;
+        margin-left: 10px;
+    }
+    
+    .feature .Chevrolet:hover {
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    
+    .feature .Chevrolet img {
+        width: 100%;
+        margin-bottom: 10px;
+    
+    }
+    
+    .feature .Chevrolet h6 {
+        display: inline-block;
+        padding: 9px 8px 6px 8px;
+        line-height: 1;
+        border-radius: 4px;
+        color: #088178;
+        background-color: #fddef4;
+    }
+
+    .product .imagdiv {
+        width: 18%;
+        text-align: center;
+        padding: 25px 15px;
+        box-shadow: 20px 20px 34px rgba(0, 0, 0, .03);
+        border: 1px solid #cce7d0;
+        border-radius: 4px;
+        margin: 15px 0px;
+        margin-left: 20px;
+    
+    }
+    
+    .product button:hover {
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    
+    .product .imagdiv img {
+        width: 100%;
+        margin-bottom: 10px;
+    
+    }
+    
+    h6 {
+        display: inline-block;
+        padding: 9px 8px 6px 8px;
+        line-height: 1;
+        border-radius: 4px;
+        color: #088178;
+        background-color: #fddef4;
+    }
+    
+    #p1 {
+        padding: 15px;
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
+        display: none;
+    
+    }
+    #p2 {
+        padding: 15px;
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
+        display: none;
+    
+    }
+    
+    #p3 {
+        padding: 15px;
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
+        display: none;
+    
+    }
+    
+    #p4 {
+        padding: 15px;
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
+        display: none;
+    
+    }
+
+    #imgdiv1 {
+
+        display: none;
+    
+    
+    }
+    
+    
+    #imgdiv2 {
+        display: none;
+    }
+    
+    #imgdiv3 {
+        display: none;
+    }
+    
+    #imgdiv4 {
+        display: none;
+    }
+
+  .search button {
+    background-color: #e30d0d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+ 
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    display: block;
+
+    color: #FFF;
+    text-align: left;
+    line-height: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #666;
+}
+  footer {
+    text-align: center;
+    background-color: #444;
+    padding: 20px ;
+    color: #fff;
+    margin-top: 20px;
+  }
+  

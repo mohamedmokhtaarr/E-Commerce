@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chevrolet Cars</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+<link rel="stylesheet" href="./cssFiles/style.css">     
+<link rel=" shortcut icon" href="favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+
+
+<header>
+        <a href="#"><img  src="./img/logo.png" alt="Chevrolet" class="logo"></a>
+
+                <div class="logo"><a href="#">Chevrolet</a></div>
+                
+                
+                
+                <div class="search">
+
+                ><input type="text"  id="input" />
+                
+                <ion-icon class="s" name="search"></ion-icon>
+                <button type="submit">Search</button>
+              
+                
+                </div>
+                
+                <div class="heading">
+                
+                <ul>
+                
+                <li><a href="index.html" class="under">HOME</a></li>
+                <li><a href="contact.html" class="under">CONTACT US</a></li>
+                <li><a href="about.html" class="under">ABOUT US</a></li>
+              <li> <a href="#"> <i class="fa fa-shopping-cart" aria-hidden="true"><span id="cart-count">0</span></i> </a></li>
+                
+                
+                </ul>
+                
+                </div>
+                
+                <div class="heading1"><ion-icon name="menu" class="ham"></ion-icon></div>
+                
+</header>
+
+<div class="content" > 
+        <div class="text">
+            <h2>Chevrolet Malibu 2023 </h2>
+            <p>
+                The 2023 Chevrolet Malibu LS is equipped with a[n] Gasoline 1.5L I-4 engine
+                 that can produce up to 160 hp @ 5700 rpm horsepower
+                 and a maximum torque of 
+                 184 lb-ft @ 2500 rpm. The transmission is a[n] variable-Speed Automatic 
+                 with front-wheel drive.
+            </p>
+            <a href="#">All Products</a>
+                 
+        </div>
+
+        <div class="image">
+                <img src="./img/sedan1.webp" class="img-content">
+            </div>
+</div>
+
+
+<section class="main-image-slider">
+        <section class="image-slider">
+          <div class="arrow-left" onclick="changeColor('#50e6c5')" >
+            <i  class="fas fa-arrow-right"></i>
+          </div>
+          <div class="arrow-right" onclick="changeColor('#247ec8') ">
+            <i  class="fas fa-arrow-left"></i>
+            
+          </div>
+        </section>
+    </section> 
+
+
+    <section class="feature">
+      <div onclick="showImage()" id="trucks" class="Chevrolet">
+          <img src="./img/truck1.webp" alt="">
+          <h6>Trucks</h6>
+      </div>
+      <div onclick="showImage2()" id="suv" class="Chevrolet">
+        <img src="./img/suv1.webp" alt="">
+        <h6>SUV</h6>
+      </div>
+      <div onclick="showImage3()" id="sedan" class="Chevrolet">
+        <img src="./img/sedan1.webp" alt="">
+        <h6>Sedan</h6>
+      </div>
+      <div onclick="showImage4()" id="van" class="Chevrolet">
+        <img src="./img/van1.avif" alt="">
+        <h6>Van</h6>
+      </div>
+      
+  </section>
+
+
+  <p id="p1">Trucks</p>
+  <section id="imgdiv1" class="product">
+      <div class="imagdiv">
+          <img src="./img/truck1.webp" alt="">
+          <h6>10.000$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+      </div>
+      <div class="imagdiv">
+        <img src="./img/truck2.webp" alt="">
+        <h6>15.000$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+      </div>
+      <div class="imagdiv">
+        <img src="./img/truck3.webp" alt="">
+        <h6>7.000$</h6>
+        <button id="cart-button" onclick="addToCart()">
+            <h6>Add</h6>
+        </button>
+    </div>
+    <div class="imagdiv">
+        <img src="./img/truck4.avif" alt="">
+        <h6>10.000$</h6>
+        <button id="cart-button" onclick="addToCart()">
+            <h6>Add</h6>
+        </button>
+    </div>
+     
+  </section>
+
+  <p id="p2">SUV</p>
+  <section id="imgdiv2" class="product">
+      <div class="imagdiv">
+        <img src="./img/suv1.webp" alt="">
+        <h6>18500$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+      </div>
+      <div class="imagdiv">
+        <img src="./img/suv2.jpg" alt="">
+        <h6>9250$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+      </div>
+      <div class="imagdiv">
+        <img src="./img/suv3.jpg" alt="">
+        <h6>15890$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+      </div>
+
+      <div class="imagdiv">
+        <img src="./img/suv4.jpg" alt="">
+        <h6>12370$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+      </div>
+    
+
+  </section>
+
+
+  <p id="p3"> Sedan </p>
+  <section id="imgdiv3" class="product">
+      <div class="imagdiv">
+        <img src="./img/sedan1.webp" alt="">
+        <h6>16.000$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+
+      </div>
+      <div class="imagdiv">
+        <img src="./img/sedan2.avif" alt="">
+        <h6>12.000$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+
+      </div>
+      <div class="imagdiv">
+        <img src="./img/sedan3.jpeg" alt="">
+        <h6>85000$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+
+      </div>
+      <div class="imagdiv">
+        <img src="./img/sedan4.jpg" alt="">
+        <h6>11.000$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+
+      </div>
+     
+  </section>
+
+  <p id="p4">Van</p>
+  <section id="imgdiv4" class="product">
+      <div class="imagdiv">
+        <img src="./img/van1.avif" alt="">
+        <h6>12.370$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+      </div>
+      <div class="imagdiv">
+        <img src="./img/van2.jpg" alt="">
+        <h6>2.000$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+      </div>
+      <div class="imagdiv">
+        <img src="./img/van3.jpg" alt="">
+        <h6>15.850$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+      </div>
+      <div class="imagdiv">
+        <img src="./img/van4.jpg" alt="">
+        <h6>12.370$</h6>
+          <button id="cart-button" onclick="addToCart()">
+              <h6>Add</h6>
+          </button>
+      </div>
+     
+
+  </section>
+
+<footer>
+<p>&copy; 2023 MySHOP. All rights reserved.</p>
+<ul class="social-icons">
+        <li><a href="https://www.facebok.com"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.gmail.com"><i class="fab fa-google"></i></a></li>
+
+    </ul>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
